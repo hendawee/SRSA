@@ -1,0 +1,28 @@
+
+div.breadcrumb {
+  padding: 20px 0;
+  background: #f6f6f6;
+  box-shadow: 0px 3px 3px 0px rgba(56, 71, 109, 0.06);
+   li.breadcrumb-item {
+      i {
+          margin: 0 5px;
+          color: #29A5AD;
+      }
+      a {
+          font-size: 16px;
+          color: #404040;
+          font-family: "Tajawal Bold";
+      }
+      &.active{
+          a {
+              color: #004a98;
+          }
+      }
+  } 
+  .breadcrumb-item+.breadcrumb-item::before {
+      content: var(--bs-breadcrumb-divider, "|") !important;
+  }
+  ol.breadcrumb {
+    margin-bottom: 0;
+}
+}

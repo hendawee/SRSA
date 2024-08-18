@@ -1,0 +1,130 @@
+// Main Colors
+$primary: #0049A0;
+$secondary: #0C2241;  
+$third: #29A5AD;
+$forth: #1C7EA7;
+$darker: #404040;
+$dark: #909090;
+$dark-light:#707070;
+$gradient: linear-gradient(to top right, #29a2ac, #12509e);
+//Fields Colors
+$border_color: rgba($primary, 0.1);
+$bg-fields: #F4F4F4;
+// $box-shadow: 0px 10px 30px 0px rgba(82, 63, 105, 0.05);
+$box-shadow: 0px 5px 8px 0px rgba(70, 78, 95, 0.02);
+$white: #fff;
+$black: #000;
+$grey: #ccc;
+
+
+//Messages Color, Alert, reject
+$red: #e94235;
+$green: #0bb783;
+$orange: #f7bf39;
+ 
+ 
+// Portal Fonts
+$font-light: "Tajawal Light";
+$font-regular:"Tajawal Regular";
+$font-medium: "Tajawal Medium"; 
+$font-bold: "Tajawal Bold";
+$font-black: "Tajawal ExtraBold";
+// Font Size
+$font-size-xs:12px;
+$font-size-sm: 14px;
+$font-size-normal: 16px;
+$font-size-large: 18px;
+$font-size-xlarge: 28px;
+$font-size-heading: 48px;
+ 
+// Media Query Screen Size
+$xxs: 350px;
+$sm: 480px;
+$md: 769px;
+$lg: 992px; 
+$xl: 1200px;
+$xxl: 1399px;
+$xxxl: 1599px;
+$xxxxl: 1799px;
+
+//Elements
+a {
+  text-decoration: none;
+  transition: 0.3s all ease;
+}
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background: var($white);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: var($border_color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba($darker, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: $primary;
+}
+::-moz-placeholder {
+  color: $dark !important;
+  opacity: 1; /* Firefox */
+}
+::placeholder {
+  color: $dark !important;
+  opacity: 1; /* Firefox */
+}
+::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: $dark !important;
+}
+
+
+* {
+  box-sizing: border-box;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+
+}
+
+
+*:focus {
+  box-shadow: none !important;
+}
+
+
+a,
+button {
+  transition: all 0.3s ease;
+}
+
+body,html{
+  height: 100%;
+}
+
+body {
+  font-family: $font-regular;
+  color: $darker;
+  // background-color: $white;
+  line-height: 150%;
+  font-size: $font-size-normal;
+  background: #f4f6f9;
+  
+} 
+

@@ -1,0 +1,29 @@
+.news-wrapper {
+    position: relative;
+}
+
+.news-wrapper h2 {text-transform:capitalize;margin:20px 0;font-family: 'Tajawal Medium';}
+
+.news-wrapper img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.news-wrapper .news-date {
+    background: rgba(18,80,158,0.1);
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px 40px 8px;
+    color: #12509e;
+    font-family: 'Tajawal Bold';
+}
+
+.news-wrapper .news-date i {
+    margin: 0 5px;
+}
+
+.news-wrapper .news-desc {
+    font-size: 18px;
+    color: #707070;
+    line-height: 30px;
+}

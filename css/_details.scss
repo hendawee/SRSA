@@ -1,0 +1,277 @@
+.details-header-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #b6b6b6; 
+    padding-bottom: 20px;
+    @media (max-width: $lg) {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .main-title h2 {
+      font-family: "Tajawal Bold";
+      margin-bottom: 0;
+      color: #404040;
+      @media (max-width: $lg) {
+          text-align: center;
+        }
+  
+    }
+  
+    .main-title p {
+      color: #707070;
+      font-size: 16px;
+      font-family: "Tajawal Medium";
+      margin-bottom: 10px;
+    }
+  
+    .req-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      > div {
+        background: #fff;
+        padding: 10px 20px;
+        font-size: $font-size-normal;
+        transition: all ease 1s;
+        cursor: default;
+        span {
+          font-family: $font-bold;
+          @media (max-width: $lg) {
+            display: block;
+          }
+        }
+        &:hover {
+              background: #28a5ad;
+            color:#fff;
+        }
+      }
+    }
+}
+.details-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed $border_color;
+    @media (max-width: $lg) {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .req-num {
+      font-size: $font-size-large;
+      font-family: $font-bold;
+      span {
+        color: $bg-fields;
+      }
+    }
+    .req-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      > div {
+        background: $bg-fields;
+        padding: 10px 20px;
+        font-size: $font-size-normal;
+        transition: all ease 1s;
+        cursor: default;
+        span {
+          font-family: $font-bold;
+          @media (max-width: $lg) {
+            display: block;
+          }
+        }
+        &:hover {
+          background: $grey;
+        }
+      }
+    }
+  }
+  .frm-request {
+    padding: 20px 0;
+    .head-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .frm-title {
+        font-size: $font-size-large;
+        font-family: $font-bold;
+      }
+    }
+    .summary-data {
+      background: $white;
+      margin: 25px 0;
+      .data-row {
+        display: flex;
+        padding: 20px;
+        border-bottom: 1px dashed $grey;
+        line-height: 150%;
+        @media (max-width: $lg) {
+          flex-direction: column;
+        }
+        .frmLabel {
+            width: 20%;
+            font-size: 18px;
+            font-family: "Tajawal Bold";
+            color: #404040;
+          @media (max-width: $lg) {
+            width: 100%;
+          }
+        }
+        .frmValue {
+            width: 80%;
+            color: #707070;
+            font-family: 'Tajawal Medium';
+            font-size: 18px;
+          @media (max-width: $lg) {
+            width: 100%;
+          }
+        }
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+    .summary-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 60px 0 20px;
+      @media (max-width: $lg) {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .req-title {
+        font-size: $font-size-large;
+        font-family: $font-bold;
+      }
+      .indecators {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: $font-size-large;
+        > div {
+          position: relative;
+          padding-inline-start: 30px;
+          &:before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background: $grey;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            [dir="rtl"] & {
+              right: 0;
+              left: auto;
+            }
+          }
+          &.green {
+            &:before {
+              background: $green;
+            }
+          }
+          &.orange {
+            &:before {
+              background: $orange;
+            }
+          }
+          &.red {
+            &:before {
+              background: $red;
+            }
+          }
+        }
+      }
+    }
+    .request-timeline {
+      position: relative;
+      .itm-timeline {
+        background: rgba($dark, 0.05);
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        @media (max-width: $lg) {
+          flex-direction: column;
+          gap: 1rem;
+        }
+        .timeline-info {
+          display: flex;
+          align-items: center;
+          @media (max-width: $lg) {
+            flex-direction: column;
+            gap: 1rem;
+          }
+          img {
+            width: 42px;
+            height: 42px;
+          }
+          .itm-state {
+            padding: 0 20px;
+            margin-inline-end: 20px;
+            border-right: 1px solid $grey;
+           
+            @media (max-width: $lg) {
+              border: 0px;
+              margin-inline-end: 0px;
+              padding: 0;
+            }
+            p {
+              margin: 0;
+              font-family: $font-bold;
+              font-size: $font-size-large;
+              color: #404040;
+            }
+            span {
+                font-size: 15px;
+                color: #707070;
+                font-family: 'Tajawal Medium';
+            }
+          }
+        }
+        .timeline-author{
+            font-family: 'Tajawal Medium';
+            color: #707070;
+            font-size: 18px;
+        }
+        &:hover {
+          background: rgba($dark, 0.1);
+          cursor: default;
+        }
+        &.green {
+          background: rgba($green, 0.1);
+          &:hover {
+            background: rgba($green, 0.2);
+            cursor: default;
+          }
+        }
+        &.orange {
+          background: rgba($orange, 0.1);
+          &:hover {
+            background: rgba($orange, 0.2);
+            cursor: default;
+          }
+        }
+        &.red {
+          background: rgba($red, 0.1);
+          &:hover {
+            background: rgba($red, 0.2);
+            cursor: default;
+          }
+        }
+        &.done {
+          .itm-state {
+            border: none !important;
+          }
+        }
+      }
+    }
+  }
+  

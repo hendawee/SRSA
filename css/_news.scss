@@ -1,0 +1,97 @@
+.news-item {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  gap: 30px;
+
+  @media (max-width: $lg) {
+    flex-direction: column;
+  }
+
+  .news-text {
+    width: 70%;
+  
+    @media (max-width: $xl) {
+      width: 60%;
+    }
+    @media (max-width: $lg) {
+      width: 100%;
+    }
+
+    h2 {
+        color: #0049a0;
+        font-size: 24px;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+        font-size: 24px;
+        font-family: "Tajawal Medium";
+        margin-top: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .date {
+        color: #777;
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+      
+      
+  }
+}
+
+
+
+.news-text 
+.news-text 
+
+.news-text 
+.news-text .description {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-family: "Tajawal Medium";
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 1.2em;
+  max-height: 80px;
+}
+
+.details-button {
+  display: inline-block;
+  color: #0049a0;
+  border: 2px solid #0049a0;
+  padding: 10px 30px 7px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.details-button:hover {
+  background: linear-gradient(to top right, #29a2ac, #12509e);
+  color: #fff;
+}
+
+.news-image {
+  @media (max-width: $lg) {
+    width: 100%;
+  }
+  img {
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    @media (max-width: $lg) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}

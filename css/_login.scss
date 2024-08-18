@@ -1,0 +1,178 @@
+.login {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    @media (max-width: $xl) {
+      overflow: scroll;
+    }
+    .background-slider {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      z-index: 0;
+      .slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+        &.active-slide {
+          animation: zoomAnimation 10s ease-out forwards,
+            fadeInAnimation 1.5s ease-out forwards;
+        }
+      }
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background: url(../images/pat6.png) repeat scroll 0 0;
+        background-color: rgba($dark, 0.2);
+      }
+    }
+    .login-contents {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 50px;
+      gap: 5%;
+      @media (max-width: $xl) {
+        flex-direction: column;
+        gap: 0;
+        margin: 50px 0;
+        padding: 20px;
+      }
+      .right-side {
+        width: 100%;
+        max-width: 500px;
+        @media (max-width: $xxxxl) {
+          max-width: 480px;
+        }
+        @media (max-width: $xl) {
+          order: 2;
+        }
+        .login-form {
+          display: flex;
+          width: 100%;
+          padding: 50px 40px;
+          flex-direction: column;
+          align-items: center;
+          background: $white;
+          position: relative;
+          .form-header {
+            img {
+              width: 200px;
+              margin-bottom: 20px;
+            }
+          }
+          .login-fields {
+            width: 90%;
+            .username,
+            .password {
+              margin-top: 25px;
+              position: relative;
+              input {
+                border: 1px solid $border-color;
+                background: #f3f6f9;
+                color: $dark;
+                height: 60px;
+                font-family: 'Tajawal Medium';
+                font-size: 18px;
+              }
+              .ic-pass {
+                position: absolute;
+                top: 20px;
+                inset-inline-end: 5%;
+                i {
+                  font-size: $font-size-large;
+                  color: $border-color;
+                }
+              }
+            }
+            .form-check {
+              display: flex;
+              align-items: center;
+              align-content: center;
+              margin-top: 25px;
+              label {
+                color: $dark;
+                font-size: $font-size-normal;
+                margin-inline-start: 35px;
+              }
+              input {
+                border-radius: 3px;
+                width: 24px;
+                height: 24px;
+                flex-shrink: 0;
+              }
+            }
+            button {
+              border-radius: 5px;
+              background: $primary;
+              width: 100%;
+              height: 60px;
+              color: $white;
+              text-align: center;
+              font-size: $font-size-large;
+              margin-top: 25px;
+              font-family: $font-bold;
+              line-height: 0;
+              padding-bottom: 15px;
+              font-size: 18px;
+              &:hover {
+                background: $third;
+                color: $white;
+              }
+            }
+            .forgot-check {
+              margin-top: 25px;
+              border-top: 1px solid $border-color;
+              padding-top: 25px;
+              text-align: center;
+            }
+          }
+        }
+      }
+      .left-side {
+        width: 50%;
+        @media (max-width: $xxxl) {
+          width: 50%;
+        }
+        @media (max-width: $xl) {
+          width: 100%;
+          text-align: center;
+          margin: 50px 0;
+        }
+        .login-text {
+          span {
+            font-size: 20px;
+            color: #Fff;
+            font-family: 'Tajawal Medium';
+          }
+          h1 {
+            font-family: $font-bold;
+            color: $white;
+            font-size: $font-size-heading;
+            margin: 10px 0;
+            b{
+                color: #29a2ac;
+            }
+          }
+          p {
+            width: 100%;
+            font-size: 22px;
+            line-height: 150%;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+  

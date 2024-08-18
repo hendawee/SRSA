@@ -1,0 +1,43 @@
+.gallery-data {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    a {
+        display: block;
+        width: 24%;
+        margin: 0.5%;
+        @media (max-width: $lg) {
+            width: 49%;  
+          }
+          @media (max-width: $md) {
+            width: 100%; 
+            margin-bottom: 30px; 
+          }
+   
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    
+    }
+}
+
+
+
+
+.gallery-header-wrapper{
+    .main-title {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        border-bottom: 1px dashed #b6b6b6;
+        padding-bottom: 20px;
+        h2.section-title {
+            font-family: "Tajawal Bold";
+            margin-bottom: 0;
+            color: #404040;
+        }
+    }
+}

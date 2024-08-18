@@ -1,0 +1,38 @@
+.btn {
+  border-radius: 5px;
+  background: rgba($primary, 0.1);
+  color: $primary;
+  text-align: center;
+  font-family: $font-bold;
+  font-size: $font-size-large;
+  line-height: 150%;
+  padding: 15px 30px;
+  &:hover {
+    background: $primary;
+    color: $white;
+  }
+  &.red {
+    background: rgba($red, 0.1);
+    color: $red;
+    &:hover {
+      background: $red;
+      color: $white;
+    }
+  }
+  &.orange {
+    background: rgba($secondary, 0.1);
+    color: $secondary;
+    &:hover {
+      background: $secondary;
+      color: $white;
+    }
+  }
+  &.green {
+    background: rgba($green, 0.1);
+    color: $green;
+    &:hover {
+      background: $green;
+      color: $white;
+    }
+  }
+}
